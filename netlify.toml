@@ -1,4 +1,4 @@
 [[redirects]]
 from="/*"
-to="http://localhost:5173/"
+to="https://url-shortner-rsk.netlify.app"
 status=200
