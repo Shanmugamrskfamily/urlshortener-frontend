@@ -15,7 +15,7 @@ const Login = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = "http://localhost:4505/api/auth";
+			const url = "https://urlshortner-shanmugamr.onrender.com/api/auth";
 			const { data: res } = await axios.post(url, data);
 			localStorage.setItem("token", res.data);
 			localStorage.setItem("userId", res.userId);

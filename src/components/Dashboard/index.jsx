@@ -11,8 +11,8 @@ const Dashboard = () => {
   useEffect(() => {
     const userId=localStorage.getItem("userId");
 
-    // Fetch data from the API and update the statsData state
-    const BASE_URL = 'http://localhost:4505'; // Adjust the base URL
+    
+    const BASE_URL = 'https://urlshortner-shanmugamr.onrender.com'; 
     axios
       .get(`${BASE_URL}/api/data/${userId}`)
       .then((response) => {
@@ -24,7 +24,7 @@ const Dashboard = () => {
   }, []);
 
   useEffect(() => {
-    // Create or update the chart when statsData changes
+    
     if (chartRef.current) {
       chartRef.current.destroy();
     }

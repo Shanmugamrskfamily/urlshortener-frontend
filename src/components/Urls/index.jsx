@@ -9,7 +9,7 @@ import Swal from 'sweetalert2';
 
 function Urls() {
   const [urls, setUrls] = useState([]);
-  const BASE_URL = 'http://localhost:4505';
+  const BASE_URL = 'https://urlshortner-shanmugamr.onrender.com';
 
   useEffect(() => {
     const userId=localStorage.getItem("userId");

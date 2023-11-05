@@ -14,7 +14,7 @@ const Shortener = () => {
 
 
   // Define BASE_URL here
-  const BASE_URL = 'http://localhost:4505';
+  const BASE_URL = 'https://urlshortner-shanmugamr.onrender.com';
 
   const isValidURL = (str) => {
     try {

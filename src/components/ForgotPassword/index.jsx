@@ -10,7 +10,7 @@ const ForgotPassword = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = `http://localhost:4505/api/password-reset`;
+			const url = `https://urlshortner-shanmugamr.onrender.com/api/password-reset`;
 			const { data } = await axios.post(url, { email });
 			setMsg(data.message);
 			setError("");
